@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Alarm List</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="wrapper">
+    <span style="font-size: 30px; font-family:cursive; color:#772de0;" title="Current Time">Current Time</span>
+    <h1>00:00:00 AM</h1>
+    <div class="content">
+      <div class="column">
+        <select title="Select Hours">
+          <option value="Hour" selected disabled hidden>HH</option>
+        </select>
+      </div>
+      <div class="column">
+        <select title="Select Minutes">
+          <option value="Minute" selected disabled hidden">MM</option>
+        </select>
+      </div>
+      <div class="column">
+        <select title="Select Seconds">
+          <option value="Second" selected disabled hidden>SS</option>
+        </select>
+      </div>
+      <div class="column">
+        <select title="Select AM/PM">
+          <option value="AM/PM" selected disabled hidden title="Select AM/PM">A/P</option>
+        </select>
+      </div>
+    </div>
+    <div id="button">
+      <button id="reset" title="Click me to Reset all values">Reset</button>
+      <button id="alarm" title="Click me to set Alarm">Set Alarm</button>
+    </div>
+
+    <br>
+  
+
+    <div class="list">
+      <h1 id="title" title="Your Alarms List">Alarms List</h1>
+      <div>
+        <ul id="myUL" title="Click me to mark as complete">
+          <!-- <li checked>12:00:00 AM</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="script.js"></script>
+
+</body>
+
+</html>
